@@ -1,4 +1,4 @@
-# Stoneapple Backend API Stack
+# Project Backend API Stack
 
 ## TechStack
 
