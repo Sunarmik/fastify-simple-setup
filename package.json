@@ -1,5 +1,5 @@
 {
-    "name": "stoneapple-backend",
+    "name": "fastify-simple-setup",
     "version": "1.5.0",
     "description": "StoneApple Backend Codebase",
     "type": "module",
@@ -8,7 +8,7 @@
       "lint:fix": "eslint . --fix",
       "check:types": "tsc --noEmit",
       "build": "esbuild `find src \\( -name '*.ts' \\)` --platform=node --outdir=build --resolve-extensions=.js",
-      "build:docker:prod": "docker build . -t stoneapple-backend-app --build-arg APP_ENV=production",
+      "build:docker:prod": "docker build . -t fastify-simple-setup-app --build-arg APP_ENV=production",
       "start": "node build",
       "dev": "tsx watch src .env | pino-pretty --colorize",
       "pretest": "yarn run build",
@@ -17,7 +17,7 @@
     },
     "repository": {
       "type": "git",
-      "url": "https://github.com/Sunarmik/stoneapple-backend.git"
+      "url": "https://github.com/Sunarmik/fastify-simple-setup.git"
     },
     "engines": {
       "node": ">=16.19.0"
@@ -30,9 +30,9 @@
     "author": "Sunarmik Das",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/Sunarmik/stoneapple-backend.git/issues"
+      "url": "https://github.com/Sunarmik/fastify-simple-setup.git/issues"
     },
-    "homepage": "https://github.com/Sunarmik/stoneapple-backend.git#readme",
+    "homepage": "https://github.com/Sunarmik/fastify-simple-setup.git#readme",
     "dependencies": {
       "@fastify/cors": "^8.2.0",
       "@fastify/helmet": "^10.1.0",
